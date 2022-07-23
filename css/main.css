@@ -1,0 +1,141 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("../images/bg-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100px;
+  background-color: hsl(257, 40%, 49%);
+}
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width:767px) {
+  .section {
+    width: 375px;
+  }
+}
+@media (min-width:768px) {
+  .section {
+    width: 750px;
+  }
+}
+@media (min-width:992px) {
+  .section {
+    width: 970px;
+  }
+}
+@media (min-width:1200px) {
+  .section {
+    width: 1170px;
+  }
+}
+header {
+  padding-top: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+@media (max-width:767px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.image img {
+  max-width: 100%;
+}
+.text {
+  margin-left: 40px;
+  margin-top: 40px;
+  flex: 1;
+}
+@media (max-width:767px) {
+  .text {
+    margin-left: 0;
+  }
+}
+.text h2 {
+  font-size: 35px;
+  color: white;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0;
+}
+@media (max-width:767px) {
+  .text h2 {
+    font-size: 30px;
+  }
+}
+.text p {
+  color: #ccc;
+  line-height: 1.5;
+  font-size: 15px;
+}
+@media (max-width:767px) {
+  .text p {
+    max-width: 280px;
+    margin: 20px auto;
+  }
+}
+.text a {
+  display: block;
+  text-decoration: none;
+  width: 140px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-align: center;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  transition: .5s;
+}
+@media (max-width:767px) {
+  .text a {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 200px;
+  }
+}
+.text a:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (max-width:767px) {
+  .icons {
+    justify-content: center;
+  }
+}
+.icons i {
+  margin-left: 15px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  cursor: pointer;
+}
+.icons i:hover {
+  color: hsl(300, 69%, 71%);
+  border: 1px solid hsl(300, 69%, 71%);
+}
